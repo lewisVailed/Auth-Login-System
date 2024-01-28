@@ -34,7 +34,7 @@ class AuthHeaderView: UIView {
         subLabel.textColor = .secondaryLabel
         subLabel.textAlignment = .center
         subLabel.font = .systemFont(ofSize: 16, weight: .regular)
-        
+        subLabel.text = ""
         
         return subLabel
     }()
@@ -70,6 +70,13 @@ class AuthHeaderView: UIView {
             self.imageView.widthAnchor.constraint(equalToConstant: 70),
             self.imageView.heightAnchor.constraint(equalToConstant: 70),
             
+            self.label.topAnchor.constraint(equalTo: self.imageView.bottomAnchor, constant: 19),
+            self.label.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.label.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            
+            self.subLabel.topAnchor.constraint(equalTo: self.label.bottomAnchor, constant: 12),
+            self.subLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.subLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
         ])
         
     }

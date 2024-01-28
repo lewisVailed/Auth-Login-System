@@ -16,6 +16,8 @@
 		D73D355F2B63D3FD009ACB57 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D355E2B63D3FD009ACB57 /* ForgotPasswordController.swift */; };
 		D73D35612B63D40E009ACB57 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35602B63D40E009ACB57 /* LoginController.swift */; };
 		D73D35652B63D77F009ACB57 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35632B63D601009ACB57 /* AuthHeaderView.swift */; };
+		D73D35672B66C689009ACB57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35662B66C689009ACB57 /* CustomTextField.swift */; };
+		D73D35692B66DC40009ACB57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35682B66DC40009ACB57 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		D73D355E2B63D3FD009ACB57 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		D73D35602B63D40E009ACB57 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		D73D35632B63D601009ACB57 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		D73D35662B66C689009ACB57 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D73D35682B66DC40009ACB57 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				D73D35632B63D601009ACB57 /* AuthHeaderView.swift */,
+				D73D35662B66C689009ACB57 /* CustomTextField.swift */,
+				D73D35682B66DC40009ACB57 /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,8 +170,10 @@
 			files = (
 				D73D355D2B63D3E4009ACB57 /* RegisterController.swift in Sources */,
 				D73D355F2B63D3FD009ACB57 /* ForgotPasswordController.swift in Sources */,
+				D73D35692B66DC40009ACB57 /* CustomButton.swift in Sources */,
 				D73D355B2B63D3D5009ACB57 /* HomeController.swift in Sources */,
 				D73D35462B63D037009ACB57 /* AppDelegate.swift in Sources */,
+				D73D35672B66C689009ACB57 /* CustomTextField.swift in Sources */,
 				D73D35482B63D037009ACB57 /* SceneDelegate.swift in Sources */,
 				D73D35612B63D40E009ACB57 /* LoginController.swift in Sources */,
 				D73D35652B63D77F009ACB57 /* AuthHeaderView.swift in Sources */,
