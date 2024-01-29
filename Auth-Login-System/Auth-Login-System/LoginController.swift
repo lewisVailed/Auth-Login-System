@@ -13,6 +13,9 @@ class LoginController: UIViewController {
     private let headerView = AuthHeaderView(title: "Sign In", subTitle: "Sign in to your account")
     private let usernameField = CustomTextField(fieldType: .username)
     private let passwordField = CustomTextField(fieldType: .password)
+    private let signInButton = CustomButton(title: "Sign In", hasBackground: true, fontSize: .big)
+    private let newUserButton = CustomButton(title: "New User? Create Account.", fontSize: .medium)
+    private let forgotUserButton = CustomButton(title: "Forgot Password?", fontSize: .small)
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -31,10 +34,18 @@ class LoginController: UIViewController {
         self.view.addSubview(headerView)
         self.view.addSubview(usernameField)
         self.view.addSubview(passwordField)
+        self.view.addSubview(signInButton)
+        self.view.addSubview(newUserButton)
+        self.view.addSubview(forgotUserButton)
+        
         self.view.backgroundColor = .systemBackground
+        
         headerView.translatesAutoresizingMaskIntoConstraints = false
         usernameField.translatesAutoresizingMaskIntoConstraints = false
         passwordField.translatesAutoresizingMaskIntoConstraints = false
+        signInButton.translatesAutoresizingMaskIntoConstraints = false
+        newUserButton.translatesAutoresizingMaskIntoConstraints = false
+        forgotUserButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
         
@@ -52,6 +63,11 @@ class LoginController: UIViewController {
             self.passwordField.centerXAnchor.constraint(equalTo: usernameField.centerXAnchor),
             self.passwordField.heightAnchor.constraint(equalToConstant: 55),
             self.passwordField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
+            
+            self.signInButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 20),
+            self.signInButton.centerXAnchor.constraint(equalTo: passwordField .centerXAnchor),
+            self.signInButton.heightAnchor.constraint(equalToConstant: 55),
+            self.signInButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
         ])
         
        
