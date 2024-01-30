@@ -21,12 +21,18 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
-
+        
+        self.signInButton.addTarget(self, action: #selector(didTapSignInButton), for: .touchUpInside)
+        self.newUserButton.addTarget(self, action: #selector(didTapNewUserButton), for: .touchUpInside)
+        self.forgotUserButton.addTarget(self, action: #selector(didTapForgotPasswordButton), for: .touchUpInside)
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+        
+        self.didTapNewUserButton()
     }
     
     // MARK: - UI Setup
@@ -65,12 +71,40 @@ class LoginController: UIViewController {
             self.passwordField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
             
             self.signInButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 20),
-            self.signInButton.centerXAnchor.constraint(equalTo: passwordField .centerXAnchor),
+            self.signInButton.centerXAnchor.constraint(equalTo: passwordField  .centerXAnchor),
             self.signInButton.heightAnchor.constraint(equalToConstant: 55),
             self.signInButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
+            
+            self.newUserButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 10),
+            self.newUserButton.centerXAnchor.constraint(equalTo: signInButton.centerXAnchor),
+            self.newUserButton.heightAnchor.constraint(equalToConstant: 44),
+            self.newUserButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
+            
+            self.forgotUserButton.topAnchor.constraint(equalTo: newUserButton.bottomAnchor, constant: 5),
+            self.forgotUserButton.centerXAnchor.constraint(equalTo: newUserButton.centerXAnchor),
+            self.forgotUserButton.heightAnchor.constraint(equalToConstant: 44),
+            self.forgotUserButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
         ])
         
        
+    }
+    
+    // MARK: - Selector
+    
+    @objc func didTapSignInButton() {
+        let vc = HomeController()
+        vc.modalPresentationStyle = .fullScreen
+        self .present(vc, animated: false, completion: nil)
+    }
+    
+    @objc func didTapNewUserButton() {
+        let vc = RegisterController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func didTapForgotPasswordButton() {
+        let vc = ForgotPasswordController ()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 

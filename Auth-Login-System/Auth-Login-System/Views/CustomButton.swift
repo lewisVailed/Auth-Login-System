@@ -21,8 +21,8 @@ class CustomButton: UIButton {
         self.layer.cornerRadius = 12
         self.layer.masksToBounds = true
         
-        self.backgroundColor = hasBackground ? .systemBlue : .clear
-        let titleColor: UIColor = hasBackground ? .white : .systemBlue
+        self.backgroundColor = hasBackground ? .systemBrown : .clear
+        let titleColor: UIColor = hasBackground ? .white : .systemBrown
         self.setTitleColor(titleColor, for: .normal)
         
         switch fontSize {
