@@ -18,6 +18,7 @@
 		D73D35652B63D77F009ACB57 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35632B63D601009ACB57 /* AuthHeaderView.swift */; };
 		D73D35672B66C689009ACB57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35662B66C689009ACB57 /* CustomTextField.swift */; };
 		D73D35692B66DC40009ACB57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35682B66DC40009ACB57 /* CustomButton.swift */; };
+		D7BBF3B72B6BD715001D1C30 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBF3B62B6BD715001D1C30 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D73D35632B63D601009ACB57 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		D73D35662B66C689009ACB57 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D73D35682B66DC40009ACB57 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D7BBF3B62B6BD715001D1C30 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +68,7 @@
 		D73D35442B63D037009ACB57 /* Auth-Login-System */ = {
 			isa = PBXGroup;
 			children = (
-				D73D355A2B63D3D5009ACB57 /* HomeController.swift */,
-				D73D355C2B63D3E4009ACB57 /* RegisterController.swift */,
-				D73D355E2B63D3FD009ACB57 /* ForgotPasswordController.swift */,
-				D73D35602B63D40E009ACB57 /* LoginController.swift */,
+				D7BBF3B52B6BD6DE001D1C30 /* Controller */,
 				D73D35622B63D5E3009ACB57 /* Views */,
 				D73D35592B63D380009ACB57 /* Supporting */,
 				D73D35532B63D03B009ACB57 /* Info.plist */,
@@ -96,6 +95,18 @@
 				D73D35682B66DC40009ACB57 /* CustomButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D7BBF3B52B6BD6DE001D1C30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D73D355A2B63D3D5009ACB57 /* HomeController.swift */,
+				D73D355C2B63D3E4009ACB57 /* RegisterController.swift */,
+				D73D355E2B63D3FD009ACB57 /* ForgotPasswordController.swift */,
+				D73D35602B63D40E009ACB57 /* LoginController.swift */,
+				D7BBF3B62B6BD715001D1C30 /* WebViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				D73D355D2B63D3E4009ACB57 /* RegisterController.swift in Sources */,
 				D73D355F2B63D3FD009ACB57 /* ForgotPasswordController.swift in Sources */,
 				D73D35692B66DC40009ACB57 /* CustomButton.swift in Sources */,
+				D7BBF3B72B6BD715001D1C30 /* WebViewController.swift in Sources */,
 				D73D355B2B63D3D5009ACB57 /* HomeController.swift in Sources */,
 				D73D35462B63D037009ACB57 /* AppDelegate.swift in Sources */,
 				D73D35672B66C689009ACB57 /* CustomTextField.swift in Sources */,

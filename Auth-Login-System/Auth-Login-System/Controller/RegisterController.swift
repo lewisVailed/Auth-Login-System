@@ -117,8 +117,9 @@ class RegisterController: UIViewController {
     }
     
     @objc func didTapSignUpButton() {
-        let vc = RegisterController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let webView = WebViewController(with: "www.google.com")
+        let navigation = UINavigationController(rootViewController: webView)
+        self.present(navigation, animated: true, completion: nil)
     }
     
 
