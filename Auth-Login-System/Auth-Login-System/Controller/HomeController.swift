@@ -9,10 +9,44 @@ import UIKit
 
 class HomeController: UIViewController {
 
+    // MARK: - UI Components
+    private let label: UILabel = {
+        let label = UILabel()
+        label.textColor = .label
+        label.textAlignment = .center
+        label.numberOfLines = 2
+        label.font = .systemFont(ofSize: 25, weight: .semibold)
+        label.text = "Loading"
+ 
+        return label
+    }()
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = .systemMint
+        self.setupUI()
+        self.label.text = ""
+    }
+    
+    // MARK: - UI Setup
+    private func setupUI() {
+        self.view.addSubview(label)
+        self.view.backgroundColor = .systemBackground
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(didTapLogoutButton))
+        
+        NSLayoutConstraint.activate([
+            self.label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.label.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        
+        ])
+        
+    }
+    
+    // MARK: - Selector
+    @objc private func didTapLogoutButton() {
+        self.dismiss(animated: true, completion: nil)
     }
     
 

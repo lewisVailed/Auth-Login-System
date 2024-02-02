@@ -35,7 +35,7 @@ class CustomTextField: UITextField {
         case .username:
             self.placeholder = "Username"
         case .email:
-            self.placeholder = "Email Adress"
+            self.placeholder = "Email Address"
             self.keyboardType = .emailAddress
             self.textContentType = .emailAddress
         case .password:
