@@ -40,6 +40,7 @@ class WebViewController: UIViewController {
     // MARK: - UI Setup
     private func setupUI() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(didTapDoneButton))
+        self.navigationController?.navigationBar.backgroundColor = .secondarySystemBackground
         self.view.addSubview(webView)
         webView.translatesAutoresizingMaskIntoConstraints = false
         
