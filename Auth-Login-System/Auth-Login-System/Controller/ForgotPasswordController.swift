@@ -26,7 +26,10 @@ class ForgotPasswordController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = false
+        
+        AlertManager.showInvalidEmailAlert(on: self)
     }
+    
     
     // MARK: - UI Setup
     private func setupUI() {
