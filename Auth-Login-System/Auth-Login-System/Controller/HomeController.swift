@@ -25,7 +25,7 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
-        self.label.text = ""
+        self.label.text = "loading"
     }
     
     // MARK: - UI Setup
@@ -46,7 +46,17 @@ class HomeController: UIViewController {
     
     // MARK: - Selector
     @objc private func didTapLogoutButton() {
-        self.dismiss(animated: true, completion: nil)
+        AuthService.shared.signOut { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showLogoutErrorAlert(on: self, with: error)
+                return
+            }
+            
+            if let sceneDelegete = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                sceneDelegete.checkAuthentication()
+            }
+        }
     }
     
 

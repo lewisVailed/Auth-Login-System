@@ -50,6 +50,7 @@
 		D7BBF3F52B6F9FA5001D1C30 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBF3F42B6F9FA5001D1C30 /* AuthService.swift */; };
 		D7BBF3F82B6FAEA5001D1C30 /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBF3F72B6FAEA5001D1C30 /* RegisterUserRequest.swift */; };
 		D7BBF3FA2B6FD45B001D1C30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7BBF3F92B6FD45B001D1C30 /* GoogleService-Info.plist */; };
+		D7BBF3FC2B6FEC85001D1C30 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBF3FB2B6FEC85001D1C30 /* LoginUserRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		D7BBF3F42B6F9FA5001D1C30 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D7BBF3F72B6FAEA5001D1C30 /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
 		D7BBF3F92B6FD45B001D1C30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D7BBF3FB2B6FEC85001D1C30 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +132,7 @@
 		D73D35442B63D037009ACB57 /* Auth-Login-System */ = {
 			isa = PBXGroup;
 			children = (
-				D7BBF3F42B6F9FA5001D1C30 /* AuthService.swift */,
+				D7BBF3FD2B700F9A001D1C30 /* Auth */,
 				D7BBF3F62B6FAE61001D1C30 /* Models */,
 				D7BBF3B82B6D59E8001D1C30 /* Alert */,
 				D7BBF3B52B6BD6DE001D1C30 /* Controller */,
@@ -187,8 +189,17 @@
 			isa = PBXGroup;
 			children = (
 				D7BBF3F72B6FAEA5001D1C30 /* RegisterUserRequest.swift */,
+				D7BBF3FB2B6FEC85001D1C30 /* LoginUserRequest.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D7BBF3FD2B700F9A001D1C30 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D7BBF3F42B6F9FA5001D1C30 /* AuthService.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				D7BBF3BA2B6D59FD001D1C30 /* AlertManager.swift in Sources */,
 				D73D355F2B63D3FD009ACB57 /* ForgotPasswordController.swift in Sources */,
 				D7BBF3F52B6F9FA5001D1C30 /* AuthService.swift in Sources */,
+				D7BBF3FC2B6FEC85001D1C30 /* LoginUserRequest.swift in Sources */,
 				D73D35692B66DC40009ACB57 /* CustomButton.swift in Sources */,
 				D7BBF3B72B6BD715001D1C30 /* WebViewController.swift in Sources */,
 				D73D355B2B63D3D5009ACB57 /* HomeController.swift in Sources */,
