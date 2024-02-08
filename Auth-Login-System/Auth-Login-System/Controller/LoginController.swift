@@ -25,6 +25,8 @@ class LoginController: UIViewController {
         self.signInButton.addTarget(self, action: #selector(didTapSignInButton), for: .touchUpInside)
         self.newUserButton.addTarget(self, action: #selector(didTapNewUserButton), for: .touchUpInside)
         self.forgotUserButton.addTarget(self, action: #selector(didTapForgotPasswordButton), for: .touchUpInside)
+        
+        self.didTapNewUserButton()
     }
     
     

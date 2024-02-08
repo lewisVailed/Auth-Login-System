@@ -22,10 +22,18 @@
                                     <constraint firstAttribute="width" constant="240" id="YTB-oZ-tuW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fky-lS-Pau">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fky-lS-Pau">
                                 <rect key="frame" x="175" y="416" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFx-6F-hDI">
+                                <rect key="frame" x="0.0" y="372" width="393" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="4RC-KA-yRE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,9 +41,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Fky-lS-Pau" firstAttribute="top" secondItem="TFx-6F-hDI" secondAttribute="bottom" constant="8" id="0Pc-oq-pwt"/>
                             <constraint firstItem="oA6-uI-aYe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="2fz-fI-RJx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TFx-6F-hDI" secondAttribute="trailing" id="DBb-Pw-WIN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oA6-uI-aYe" secondAttribute="bottom" constant="459" id="L8k-sU-jbi"/>
+                            <constraint firstItem="TFx-6F-hDI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mlv-d3-1zd"/>
                             <constraint firstItem="oA6-uI-aYe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ulu-k8-pQf"/>
+                            <constraint firstItem="Fky-lS-Pau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="Zhe-5W-vzq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fky-lS-Pau" secondAttribute="trailing" constant="158" id="c4T-5H-hBI"/>
+                            <constraint firstItem="Fky-lS-Pau" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hbb-LW-2X1"/>
+                            <constraint firstItem="TFx-6F-hDI" firstAttribute="top" secondItem="oA6-uI-aYe" secondAttribute="bottom" constant="13" id="ltL-zU-xWC"/>
                         </constraints>
                     </view>
                 </viewController>

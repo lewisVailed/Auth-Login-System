@@ -18,6 +18,7 @@
 		D73D35652B63D77F009ACB57 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35632B63D601009ACB57 /* AuthHeaderView.swift */; };
 		D73D35672B66C689009ACB57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35662B66C689009ACB57 /* CustomTextField.swift */; };
 		D73D35692B66DC40009ACB57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D35682B66DC40009ACB57 /* CustomButton.swift */; };
+		D77549492B750D750031970C /* Confirmatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77549482B750D750031970C /* Confirmatory.swift */; };
 		D7BBF3B72B6BD715001D1C30 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBF3B62B6BD715001D1C30 /* WebViewController.swift */; };
 		D7BBF3BA2B6D59FD001D1C30 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBF3B92B6D59FD001D1C30 /* AlertManager.swift */; };
 		D7BBF3BF2B6F9CDD001D1C30 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D7BBF3BE2B6F9CDD001D1C30 /* FirebaseAnalytics */; };
@@ -67,6 +68,7 @@
 		D73D35632B63D601009ACB57 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		D73D35662B66C689009ACB57 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D73D35682B66DC40009ACB57 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D77549482B750D750031970C /* Confirmatory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmatory.swift; sourceTree = "<group>"; };
 		D7BBF3B62B6BD715001D1C30 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D7BBF3B92B6D59FD001D1C30 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		D7BBF3F42B6F9FA5001D1C30 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				D7BBF3B92B6D59FD001D1C30 /* AlertManager.swift */,
+				D77549482B750D750031970C /* Confirmatory.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				D7BBF3BA2B6D59FD001D1C30 /* AlertManager.swift in Sources */,
 				D73D355F2B63D3FD009ACB57 /* ForgotPasswordController.swift in Sources */,
 				D7BBF3F52B6F9FA5001D1C30 /* AuthService.swift in Sources */,
+				D77549492B750D750031970C /* Confirmatory.swift in Sources */,
 				D7BBF3FC2B6FEC85001D1C30 /* LoginUserRequest.swift in Sources */,
 				D73D35692B66DC40009ACB57 /* CustomButton.swift in Sources */,
 				D7BBF3B72B6BD715001D1C30 /* WebViewController.swift in Sources */,

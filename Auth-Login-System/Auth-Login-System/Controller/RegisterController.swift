@@ -53,7 +53,6 @@ class RegisterController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
         
-        
     }
     
     // MARK: - UI Setup
@@ -123,7 +122,31 @@ class RegisterController: UIViewController {
     }
     
     @objc func didTapSignUpButton() {
+        let registerUserRequest = RegisterUserRequest(
+            email: self.emailField.text ?? "",
+            username: self.usernameField.text ?? "",
+            password: self.passwordField.text ?? ""
+        )
         
+        // Alert for invalid username
+        if !Confirmatory.isValidUsername(for: registerUserRequest.username) {
+            AlertManager.showInvalidPasswordAlert(on: self)
+            return
+        }
+        
+        // Alert for invalid email
+        if !Confirmatory.isValidEmail(for: registerUserRequest.email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        
+        // Alert for invalid password
+        if !Confirmatory.isValidPassword(for: registerUserRequest.password) {
+            AlertManager.showInvalidPasswordAlert(on: self)
+            return
+        }
+        
+        print(registerUserRequest)
     }
 }
 
