@@ -57,16 +57,29 @@ class ForgotPasswordController: UIViewController {
             self.resetPasswordButton.centerXAnchor.constraint(equalTo: emailField.centerXAnchor),
             self.resetPasswordButton.heightAnchor.constraint(equalToConstant: 55),
             self.resetPasswordButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
-            
-        
         ])
         
     }
     
     // MARK: - Selector
     @objc private func didTapResetPasswordButton() {
-        guard let email = emailField.text, !email.isEmpty else { return }
-        // TODO: - Email validation
+        let email = self.emailField.text ?? ""
+        
+        if !Confirmatory.isValidEmail(for: email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        
+        AuthService.shared.forgotPassword(with: email) { [weak self] error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                AlertManager.showSendingPasswordResetErrorAlert(on: self, with: error)
+                return
+            }
+            
+            AlertManager.showPasswordResetSent(on: self)
+        }
     }
     
 }
