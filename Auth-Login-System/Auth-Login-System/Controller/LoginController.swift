@@ -26,7 +26,7 @@ class LoginController: UIViewController {
         self.newUserButton.addTarget(self, action: #selector(didTapNewUserButton), for: .touchUpInside)
         self.forgotUserButton.addTarget(self, action: #selector(didTapForgotPasswordButton), for: .touchUpInside)
         
-        self.didTapNewUserButton()
+        
     }
     
     
@@ -94,10 +94,35 @@ class LoginController: UIViewController {
     // MARK: - Selector
     
     @objc func didTapSignInButton() {
-        let vc = HomeController()
-        let navigation = UINavigationController(rootViewController: vc)
-        navigation.modalPresentationStyle = .fullScreen
-        self .present(navigation, animated: false, completion: nil)
+        let loginUserRequest = LoginUserRequest(
+            email: self.emailField.text ?? "",
+            password: self.passwordField.text ?? ""
+        )
+        
+        // Alert for invalid email
+        if !Confirmatory.isValidEmail(for: loginUserRequest.email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        
+        // Alert for invalid password
+        if !Confirmatory.isValidPassword(for: loginUserRequest.password) {
+            AlertManager.showInvalidPasswordAlert(on: self)
+            return
+        }
+        
+        AuthService.shared.signIn(with: loginUserRequest) { [weak self] error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                AlertManager.showSignInErrorAlert(on: self, with: error)
+                return
+            }
+                    
+            if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                sceneDelegate.checkAuthentication()
+            }
+        }
     }
     
     @objc func didTapNewUserButton() {
