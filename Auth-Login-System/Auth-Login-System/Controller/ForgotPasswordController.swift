@@ -27,7 +27,6 @@ class ForgotPasswordController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = false
         
-        AlertManager.showInvalidEmailAlert(on: self)
     }
     
     
