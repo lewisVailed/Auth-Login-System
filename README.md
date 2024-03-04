@@ -1,5 +1,17 @@
-# Auth-Login-System
- Authentication login & user-registration system and connection with firebase
+# Tatlımı Getir
+ **Proje Tanımı:** Bu proje Getir uygulamasına bir alternatif olarak günlük yaşamın yoğun temposunda zamanınızı verimli bir şekilde yönetmenizi sağlayacak, hızlı ve kullanıcı dostu bir online market deneyimi sunmayı hedefleyen yenilikçi bir girişimdir. 
+
+**Proje Kategorisi:**
+
+**Proje Tanımı:**
+
+**Referans Uygulama:**
+
+**Uygulama Adresi:**
+
+**Grup Adı:**
+
+**Proje Adı:**
 
 # Gereksinim Analizi
 
