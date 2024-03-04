@@ -1,45 +1,87 @@
 # Tatlımı Getir
  **Proje Tanımı:** Bu proje Getir uygulamasına bir alternatif olarak günlük yaşamın yoğun temposunda zamanınızı verimli bir şekilde yönetmenizi sağlayacak, hızlı ve kullanıcı dostu bir online market deneyimi sunmayı hedefleyen yenilikçi bir girişimdir. 
 
-**Proje Kategorisi:**
+**Proje Kategorisi:** E-Ticaret
 
-**Proje Tanımı:**
+**Referans Uygulama:** [Getir.com](https://getir.com)
 
-**Referans Uygulama:**
+**Uygulama Adresi:** [Tatlımı Getir](https://github.com/lewisVailed/TatlimiGetir.git)
 
-**Uygulama Adresi:**
+**Grup Adı:** Codium
 
-**Grup Adı:**
+**Proje Adı:** Tatlımı Getir
 
-**Proje Adı:**
+**Proje Ekibi:** Ayberk Bilgiç, Mustafa Narin, Betül Oran
 
-# Gereksinim Analizi
 
-[Ayberk Bilgic](#baslik-1)
-[Mustafa Narin](#baslik-2)
-[Betül Oran](#baslik-3)
+1. [Proje Planı](#baslik-1)
+2. [Gereksinim Analizi](#baslik-2)
+3. [Durum Diyagramı](#baslik-3)
+4. [Durum Senaryoları](#baslik-3)
+5. [Veritabanı Diyagramı](#baslik-3)
+6. [Front-End](#baslik-3)
+7. [Back-End](#baslik-3)
+8. [Test](#baslik-3)
+9. [Geliştirici ve Kullanıcı Dökümasyonları](#baslik-3)
 
-## [Ayberk Bilgic](#baslik-1)
-Burada başlık 1 içeriği bulunur.
-- Başlık 1
+## [Proje Planı](#baslik-1)
+
+- **GİRİŞ KAYIT SAYFASI**
   - Alt başlık 1
   - Alt başlık 2
-- Başlık 2
+- **ANASAYFA**
+  - Alt başlık 1
+  - Alt başlık
+- **ÜRÜN LİSTELEME SAYFASI**
+  - Alt başlık 1
+  - Alt başlık  
+- **ÜRÜN DETAY SAYFASI**
+  - Alt başlık 1
+  - Alt başlık
+- **SEPET SAYFASI**
+  - Alt başlık 1
+  - Alt başlık
+- **KULLANICI BİLGİLERİ SAYFASI**
   - Alt başlık 1
   - Alt başlık
 
+## [Gereksinim Analizi](#baslik-2)
 
+### [Ayberk Bilgiç](#baslik-2)
 
- 
+1. Kullanıcı kayıdı oluşturma
+2. Kullanıcı girişi yapma
+3. Ürünleri kategorilerine göre listeleme
+4. Ürünü arama
+5. İletişim adres bilgilerini kullanıcıdan talep etme
+6. Ürün filtreleme
+7. Ürünü sepete ekleme
+8. Ürünü sepetten silme
+9. Profil oluşturma ve güncelleme
+   
 
-## [Mustafa Narin](#baslik-2)
-Burada başlık 2 içeriği bulunur.
-- Başlık 1
-  - Alt başlık 1
-  - Alt başlık 2
-- Başlık 2
-  - Alt başlık 1
-  - Alt başlık 2
+### [Mustafa Narin](#baslik-2)
+
+1. Kullanıcı kayıdı oluşturma
+2. Kullanıcı girişi yapma
+3. Ürünleri kategorilerine göre listeleme
+4. Ürünü arama
+5. Ürünü sepete ekleme
+6. Ürünü sepetten silme
+7. Profil oluşturma ve güncelleme
+8. Konum seçme
+
+### [Betül Oran](#baslik-2)
+
+1. Kullanıcı kayıdı oluşturma
+2. Kullanıcı girişi yapma
+3. Ürünleri kategorilerine göre listeleme
+4. Ürünü arama
+5. Ürünü sepete ekleme
+6. Ürünü sepetten silme
+7. Profil oluşturma ve güncelleme
+8. Siparişin durum bilgisini belirtme
+
  
 
 
