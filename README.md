@@ -47,7 +47,7 @@
 
 ## [Gereksinim Analizi](#baslik-2)
 
-### [Ayberk Bilgiç](#baslik-2)
+### [Ayberk Bilgiç - Swift](#baslik-2)
 
 1. Kullanıcı kayıdı oluşturma
 2. Kullanıcı girişi yapma
@@ -60,7 +60,7 @@
 9. Profil oluşturma ve güncelleme
    
 
-### [Mustafa Narin](#baslik-2)
+### [Mustafa Narin - Flutter](#baslik-2)
 
 1. Kullanıcı kayıdı oluşturma
 2. Kullanıcı girişi yapma
@@ -71,7 +71,7 @@
 7. Profil oluşturma ve güncelleme
 8. Konum seçme
 
-### [Betül Oran](#baslik-2)
+### [Betül Oran - JavaScript](#baslik-2)
 
 1. Kullanıcı kayıdı oluşturma
 2. Kullanıcı girişi yapma
@@ -84,14 +84,3 @@
 
  
 
-
-
-
-## [Betül Oran](#baslik-2)
-Burada başlık 2 içeriği bulunur.
-- Başlık 1
-  - Alt başlık 1
-  - Alt başlık 2
-- Başlık 2
-  - Alt başlık 1
-  - Alt başlık 2
